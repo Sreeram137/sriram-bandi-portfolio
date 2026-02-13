@@ -90,6 +90,7 @@ export default function Experience() {
                                 transition={{ delay: index * 0.1 }}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
+                                onViewportEnter={() => setHoveredIndex(index)} // Mobile support
                                 className={`relative pl-8 md:pl-12 transition-all duration-300 ${hoveredIndex === index ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
                             >
                                 {/* Timeline Dot */}
