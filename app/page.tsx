@@ -13,8 +13,8 @@ export default function Home() {
       {/* Pro Effects */}
       <NoiseBackground />
 
-      {/* Scroll Container (500vh height) */}
-      <div className="relative h-[500vh]">
+      {/* Scroll Container (Responsive Height) */}
+      <div className="relative h-[100vh] md:h-[500vh]">
         {/* Sticky Viewport */}
         <div className="sticky top-0 h-screen w-full overflow-hidden">
           <ScrollyCanvas />
