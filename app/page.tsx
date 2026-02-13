@@ -14,7 +14,7 @@ export default function Home() {
       <NoiseBackground />
 
       {/* Scroll Container (Responsive Height) */}
-      <div className="relative h-[100vh] md:h-[500vh]">
+      <div className="relative h-[300vh] md:h-[500vh]">
         {/* Sticky Viewport */}
         <div className="sticky top-0 h-screen w-full overflow-hidden">
           <ScrollyCanvas />
