@@ -43,8 +43,8 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
     const yPos = clientY - top;
     x.set(xPos);
     y.set(yPos);
-    currentTarget.style.setProperty("--mouse-x", `${xPos}px`);
-    currentTarget.style.setProperty("--mouse-y", `${yPos}px`);
+    (currentTarget as HTMLElement).style.setProperty("--mouse-x", `${xPos}px`);
+    (currentTarget as HTMLElement).style.setProperty("--mouse-y", `${yPos}px`);
   }
 
   const rotateX = useTransform(mouseY, [0, 400], [5, -5]);
